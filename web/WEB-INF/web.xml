@@ -22,6 +22,8 @@
   <servlet>
   <servlet-name>springmvc</servlet-name>
   <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+
+
   <!-- 默认加载方式
   	   默认加载必须规范：
   	   * 文件命名：servlet-name-servlet.xml====springmvc-servlet.xml
@@ -36,6 +38,9 @@
   <servlet-mapping>
     <servlet-name>springmvc</servlet-name>
     <url-pattern>*.do</url-pattern>
+
+    <servlet-name>springmvc</servlet-name>
+    <url-pattern>/rest/*</url-pattern>
   </servlet-mapping>
   
 
